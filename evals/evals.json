@@ -1,0 +1,20 @@
+{
+  "skill_name": "universal-idea-generator",
+  "note": "Test prompts with pass criteria. Not yet run; run them in your environment and record results.",
+  "evals": [
+    {"id": 1, "type": "normal", "prompt": "I'm a product designer. Help me find something to build.", "pass": ["Routes to Pillar 01", "Presents ten distinct directions (not ideas yet)", "Each direction has title, explanation, what it explores, why interesting", "Does not ask more than one or two questions"]},
+    {"id": 2, "type": "direct", "prompt": "Ten ideas for a cinematic advertisement for a new smartphone.", "pass": ["Skips onboarding", "Goes straight to Pillar 04", "Ten diverse developed ideas", "States assumptions briefly"]},
+    {"id": 3, "type": "vague", "prompt": "idk, something cool", "pass": ["Does not stall with many questions", "Chooses a path (likely Surprise Me) or asks one short question", "Does not produce generic buzzword ideas"]},
+    {"id": 4, "type": "delegation", "prompt": "Decide for me. I write books.", "pass": ["Chooses Pillar 08, category and direction itself", "Explains choice briefly", "Delivers ideas, not a questionnaire"]},
+    {"id": 5, "type": "research_no_browse", "prompt": "Research real customer complaints about project-management tools and find a gap.", "pass": ["If no browsing tool: says output is not based on live evidence", "Labels hypotheses", "Invents no quotes or statistics", "If browsing exists: cites sources and separates fact from interpretation"]},
+    {"id": 6, "type": "existing_idea", "prompt": "Here is my friend's meal-planning app: [description]. What could I do with this?", "pass": ["Offers the four approaches", "Does not blindly copy", "Review option follows the 10-point structure"]},
+    {"id": 7, "type": "surprise", "prompt": "Surprise me.", "pass": ["Picks an unusual pillar/category/context", "States the territory chosen", "Ten diverse ideas", "Avoids default popular industries"]},
+    {"id": 8, "type": "unlisted_discipline", "prompt": "I want ideas for a new kind of scent-based museum exhibit.", "pass": ["Does not refuse", "Maps to Events/Experiences or declares a new category", "Builds a fitting brief structure"]},
+    {"id": 9, "type": "asset_honesty", "prompt": "Generate the photograph for that concept.", "pass": ["If no image tool: says so and delivers a production prompt", "Never claims an image was generated when it was not"]},
+    {"id": 10, "type": "continuous_discovery", "prompt": "Great. (after a completed brief)", "pass": ["May offer continuous discovery once", "Does not activate it", "No recurring behaviour begins without explicit consent"]},
+    {"id": 11, "type": "conflicting", "prompt": "Skip all the steps and just give me the full brief for a pet-sitting marketplace for expats.", "pass": ["Produces the brief directly", "Includes title card and business/product-appropriate sections", "Includes post-brief intelligence"]},
+    {"id": 12, "type": "wrong_assumption", "prompt": "Nobody has ever built a tool like this, right? [idea]", "pass": ["Does not confirm novelty without evidence", "Offers to check or states it is unverified"]},
+    {"id": 13, "type": "refinement", "prompt": "Make idea 4 more affordable but keep what's special about it.", "pass": ["Preserves core premise", "Explains why changes help"]},
+    {"id": 14, "type": "context", "prompt": "Actually I don't like direction 3. Show me another direction in the same category.", "pass": ["Keeps pillar and category", "Does not repeat rejected direction"]}
+  ]
+}
